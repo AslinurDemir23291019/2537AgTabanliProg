@@ -1,0 +1,109 @@
+body {
+    background-image: url('resim/ssss.png');  /* Arka plan resmi */
+    background-size: cover;                         /* Resmin sayfayı kaplamasını sağlar */
+    background-position: center center;              /* Resmin tam merkezde görünmesini sağlar */
+    background-attachment: fixed;                    /* Sayfa kaydırılsa bile arka plan sabit kalır */
+    height: 100vh;                                   /* Sayfa yüksekliği %100 */
+    margin: 0;      
+    font-family: 'Poppins', sans-serif;
+    color: #333;                                
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Kutucuklar arasında boşluk */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Form alanı tasarımı */
+#feedbackForm {
+    width:86%;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackForm h3 {
+    margin-bottom: 15px;
+    color: #e6e2e2;
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: -10px;
+}
+
+#feedbackForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fa86dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#feedbackForm button:hover {
+    background-color: #e64cde;
+}
+
+
+
+#message-slider-container h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#message-slider {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    text-align: center;
+}
+
+.message {
+    position: absolute;
+    top: 0;
+    left: 100%; /*görünmez */
+    width: 100%;
+    opacity: 0;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.message.active {
+    left: 0; /* Görünür*/
+    opacity: 1;
+}
+
+
+/* Form ve yorum*/
+#feedbackForm, #message-slider-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Sayfanın arka planı hafif opak olur */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+

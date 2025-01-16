@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORU VE YORUM</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="feedback-container">
+        
+        <form id="feedbackForm" action="http://localhost/ankaram/iletisim.php" method="POST">
+                
+       
+        <label for="isim">Adınız:</label>
+        <input type="text" id="isim" name="isim" required>
+    
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="konu">Konu:</label>
+        <input type="text" id="konu" name="konu" required>
+    
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" required></textarea>
+    
+        <button type="submit">Gönder</button>
+    </form>
+    </div>
+    
+</body>
+</html>

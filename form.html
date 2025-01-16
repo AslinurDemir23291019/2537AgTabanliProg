@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yer Ekle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Yeni Bir Yer Ekle</h1>
+    <form action="http://localhost/ankaram/ekle.php" method="POST">
+        <label for="isim">Yer İsmi:</label>
+        <input type="text" id="isim" name="isim" required><br><br>
+        <label for="tanim">Tanım:</label>
+        <textarea id="tanim" name="tanim" required></textarea><br><br>
+        <button type="submit">Ekle</button>
+    </form>
+</body>
+</html>
